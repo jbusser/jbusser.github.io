@@ -7,3 +7,4 @@ url: 'http://jbusser.github.io'
 twitter_username: stirredstrained
 github_username: jbusser
 markdown: kramdown
+exclude: [Gemfile, Gemfile.lock, bin]
