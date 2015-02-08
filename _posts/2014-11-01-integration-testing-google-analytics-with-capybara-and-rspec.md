@@ -21,7 +21,7 @@ collection](http://www.rubydoc.info/github/jonleighton/poltergeist/Capybara/Polt
 
 Given that we have HTML in our templates that contains code like
 
-<code data-gist-id="d9f4b1b2dca9505b97f7" data-gist-file="new.html.erb"></code>
+{% gist jbusser/d9f4b1b2dca9505b97f7 new.html.erb %}
 
 How do we test it? Specifically, how can we test the function `categoryLabel()` so that we
 know it does the right thing?
@@ -31,7 +31,7 @@ us `$.url()`. The query param `ga_category_label` is optional, so we want to sup
 default should one not be passed in. To test this, we can write a Capybara spec like
 this:
 
-<code data-gist-id="d9f4b1b2dca9505b97f7" data-gist-file="users_sign_in_spec.rb" data-gist-highlight-line="22-26"></code>
+{% gist jbusser/d9f4b1b2dca9505b97f7 users_sign_in_spec.rb %}
 
 The money code is lines 22-26. That's where we can inspect Poltergeist's collection of
 inline HTTP requests. We pass that through `google_analytics_requests` to find only those
